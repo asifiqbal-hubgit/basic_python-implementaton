@@ -1,1 +1,2 @@
-print(2+4)
+thislist_ = [1,2,3,4]
+print(thislist_)
