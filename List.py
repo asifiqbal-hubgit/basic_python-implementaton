@@ -22,3 +22,16 @@ print(type(furniture_list))
 #List Items - Data Types
 list = ["abc", 123, "Ture", 50,]
 print(list)
+
+#Access Items, Negative Indexing
+random_list = ["laptop", "book", "mobile", "pen", "box", "dropper", "oil"]
+print(random_list[3])
+print(random_list[3:5])
+print(random_list[:4])
+print(random_list[-5])
+print(random_list[-2:-5])
+
+#Check if Item Exists
+random_list = ["laptop", "book", "mobile", "pen", "box", "dropper", "oil"]
+if "dropper" in random_list:
+    print("Yes, 'propper'is in the random_list")
