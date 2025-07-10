@@ -100,11 +100,19 @@ book_list = ["English", "Urdu", "Math", "Pak-study", "Bio"]
 del book_list[1]
 print(book_list)
 
-#Delete the entire list:
+#The del keyword can also delete the list completely.
+
 book_list = ["English", "Urdu", "Math", "Pak-study", "Bio"]
-del book_list
+del book_list # This deletes the entire list
 
 #Clear the list content:
 book_list = ["English", "Urdu", "Math", "Pak-study", "Bio"]
 book_list.clear()
-print(book_list)
+print(book_list) # Output: []
+
+#Loop
+
+numbers = [1, 2, 3, 4, 5]
+
+for number in numbers:
+    print(number * 2)
