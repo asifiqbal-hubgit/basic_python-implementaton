@@ -110,9 +110,128 @@ book_list = ["English", "Urdu", "Math", "Pak-study", "Bio"]
 book_list.clear()
 print(book_list) # Output: []
 
-#Loop
+#For Loop
 
 numbers = [1, 2, 3, 4, 5]
 
 for number in numbers:
     print(number * 2)
+
+for i in range(10):
+    print(i)
+
+#While loop
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+
+#Loop: Print all items in the list, one by one:
+python = ["List", "Tuples", "Sets", "Dictionaries"]
+for x in python:
+    print(x)
+
+#Use the range() and len() functions to create a suitable iterable.
+#Print all items by referring to their index number
+python = ["List", "Tuples", "Sets", "Dictionaries"]
+for i in range(len(python)):
+    print(python[i])
+
+#Using While loop
+python = ["1: List", "2: Tuples", "3: Sets", "4: Dictionaries", "5: Data Type", "6: Variable"]
+i = 0
+while i < len(python):
+     print(python[i])
+     i = i + 1
+
+# Looping Using List Comprehension
+python = ["1) List", "2) Tuples", "3) Sets", "4) Dictionaries", "5) Data Type", "6) Variable"]
+[print(x) for x in python]
+
+#List Comprehension
+#Example
+newList = [i for i in range(0,20)]
+print(newList)
+
+#Example
+squares = [x**2 for x in range(5)]
+print(squares)
+# Output: [0, 1, 4, 9, 16]
+
+#List of even numbers
+evens = [x for x in range(10) if x % 2 == 0]
+print(evens)
+
+#Nesting list comprehensions
+my_matrix = [[j * 2 for j in range (1,5)] for i in range (1,5)]
+print (my_matrix)
+
+#Set the values in the new list to upper case
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+newlist = [x.upper() for x in fruits]
+
+print(newlist)
+
+#Sort List(Numerically)
+number = [30, 10, 80, 50, 20, 70, 40, 100, 90, 60]
+number.sort()
+print(number)
+
+#Sort Descending
+number = [30, 10, 80, 50, 20, 70, 40, 100, 90, 60]
+number.sort(reverse=True)
+print(number)
+
+##Sort List(Alphanumerically)
+
+list_alphanumerically = ["List", "Tuples", "Sets", "Dictionaries"]
+
+list_alphanumerically.sort()
+
+print(list_alphanumerically)
+
+#Using sorted()
+numbers = [4, 1, 3, 9, 2]
+sorted_list = sorted(numbers)
+print(sorted_list)
+
+#Copy a List
+#Use the copy() method
+vegetables = ['Tomato', 'Potato', 'Cabbage','Onion', 'Carrot']
+vegelist = vegetables.copy()
+print(vegelist)
+
+#Using List Slicing
+original = [1, 2, 3, 4, 5]
+copying = original[:]
+
+print(copying)
+
+#Join Two Lists
+
+list1 = [1, 2, 3, 4, 5]
+list2 = [6, 7, 8, 9, 10]
+
+list3 = list1 + list2
+print(list3)
+
+# Join by extend method
+list1 = [1, 2, 3, 4, 5]
+list2 = [6, 7, 8, 9, 10]
+
+list1.extend(list2)
+print(list1)
+
+# Using loop
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+combined = []
+
+for item in list1:
+    combined.append(item)
+
+for item in list2:
+    combined.append(item)
+
+print(combined)
