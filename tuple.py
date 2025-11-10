@@ -82,3 +82,11 @@ first, *middle, last = number
 print(first)
 print(middle)
 print(last)
+
+#Loop Tuples
+#You can loop through the tuple items by using a for loop.
+fruits = ("apple", "banana", "cherry")
+
+for item in fruits:
+    print(item)
+    
