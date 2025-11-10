@@ -1,0 +1,84 @@
+#Access Tuple Items
+#You can access tuple items by referring to the index number, inside square brackets:
+employee = ("Asif Iqbal", "Male", 33, "Marketing", 741, "Confiz", "Lahore")
+print("Name:", employee[0])
+print("Gender:", employee[1])
+print("Age:", employee[2])
+print("Department:", employee[3])
+print("Code:", employee[4])
+print("Office:", employee[5])
+print("Place:", employee[6])
+
+print(len(employee))
+print(type(employee))
+#Use slicing:
+print(employee[3])
+print(employee[2:5])
+print(employee[:4])
+print(employee[-2])
+print(employee[-2:-6])
+
+#Check if Item Exists
+#To determine if a specified item is present in a tuple use the in keyword:
+employee = ("Asif Iqbal", "Male", 33, "Marketing", 741, "Confiz", "Lahore")
+if "Marketing" in employee:
+    print("Yes, 'Marketing' is in the employee tuple")
+else:
+    print("No, 'Marketing' is in the employee tuple")
+ # Employee detail in "Tuple".
+#Change Tuple Values
+#Once a tuple is created, you cannot change its values. Tuples are unchangeable, or immutable as it also is called.
+#But there is a workaround. You can convert the tuple into a list, change the list, and convert the list back into a tuple.
+tuple1 = ("Asif Iqbal", "Male", 33, "Marketing", 741, "Confiz", "Lahore")
+tuple2 = list(tuple1)
+tuple2[2] = 30
+tuple1 = tuple(tuple2)
+print(tuple1)
+
+#Add Items
+#Since tuples are immutable, they do not have a built-in append() method, but there are other ways to add items to a tuple.
+tuple1 = ("Asif Iqbal", "Male", 33, "Marketing", 741, "Confiz", "Lahore")
+tuple2 = list(tuple1)
+tuple2.append("Developers")
+tuple1 = tuple(tuple2)
+print(tuple1)
+
+#Remove Items
+#Convert the tuple into a list, remove "apple", and convert it back into a tuple:
+tuple1 = ("Asif Iqbal", "Male", 33, "Marketing", 741, "Confiz", "Lahore")
+tuple2 = list(tuple1)
+tuple2.remove("Marketing")
+tuple1 = tuple(tuple2)
+print(tuple1)
+
+#Or you can delete the tuple completely:
+#The del keyword can delete the tuple completely:
+tuple1 = ("Asif Iqbal", "Male", 33, "Marketing", 741, "Confiz", "Lahore")
+del tuple1
+print("tuple1")
+#Packing and Unpacking a Tuple
+#When we create a tuple, we normally assign values to it. This is called "packing" a tuple:
+person = ("Asif Iqbal", "Male", 33, "Marketing")
+print(person)
+# or simply
+person = "Asif Iqbal", "Male", 33, "Marketing"
+#Tuple Unpacking
+person = ("Asif Iqbal", "Male", 33, "Marketing")
+name, gender, age, department = person
+print(name)
+print(gender)
+print(age)
+print(department)
+
+#Using Asterisk*
+person = ("Asif", "Male", 33, "Marketing", "Pakistan")
+name, gender, *details = person
+print(details)
+
+#Example with Asterisk on Other Side
+#You can also collect the first few items and group the rest:
+number = (1, 2, 3, 4, 5)
+first, *middle, last = number
+print(first)
+print(middle)
+print(last)
