@@ -235,4 +235,7 @@ for item in list2:
     combined.append(item)
 
 print(combined)
-#this is a comment
+#List
+
+this_list = [10, 20, 30, 40]
+print(this_list)

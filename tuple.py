@@ -83,10 +83,29 @@ print(first)
 print(middle)
 print(last)
 
-#Loop Tuples
-#You can loop through the tuple items by using a for loop.
-fruits = ("apple", "banana", "cherry")
-
-for item in fruits:
+#Tuple for loop
+person = ("Asif Iqbal", "Male", 32, "Marketing", "Confiz", "Lahore")
+for item in person:
     print(item)
+#Using a for Loop with Index
+person = ("Asif Iqbal", "Male", 32, "Marketing", "Confiz", "Lahore")
+for i in range(len(person)):
+    print(f"Index {i}: {person[i]}")
     
+#Using enumerate()
+person = ("Asif Iqbal", "Male", 32, "Marketing", "Confiz", "Lahore")
+for index, value in enumerate(person):
+    print(f"{index}: {value}")
+
+#Using a while Loop
+i = 0
+while i < len(person):
+    print(person[i])
+    i += 1
+#Example with Conditional Logic
+#You can combine loops with conditions.
+#Example: print only string values.
+person = ("Asif Iqbal", "Male", 32, "Marketing", "Confiz", "Lahore")
+for item in person:
+    if isinstance(item, str):
+        print(item)
