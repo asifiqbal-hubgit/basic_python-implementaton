@@ -109,3 +109,9 @@ person = ("Asif Iqbal", "Male", 32, "Marketing", "Confiz", "Lahore")
 for item in person:
     if isinstance(item, str):
         print(item)
+#Python - Join Tuples
+data1 = ("Asif IQbal", "Male", 32)
+data2 = ("Confiz", "Simplicant", "Martketing", 741)
+
+joined_data = data1 + data2
+print(joined_data)
