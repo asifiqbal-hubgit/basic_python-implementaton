@@ -142,3 +142,21 @@ result = ()
 for t in tuple:
     result += t
     print(result)
+
+#Python - Tuple Methods
+#Python has two built-in methods that you can use on tuples.
+#1. count()	Returns the number of times a specified value occurs in a tuple
+#2. index()	Searches the tuple for a specified value and returns the position of where it was found
+#count()
+name = ("Asif", "Ali", "Asad", "Asif", "Usman", "Hamza")
+print(name.count("Asif"))
+
+numbers = (1, 2, 2, 3, 4, 5, 2, 7, 6)
+print(numbers.count(2))
+
+#index()
+person_data = ("Asif IQbal", "Male", 32, "Confiz", "Simplicant", "Martketing", 741)
+print(person_data.index(32))
+##Index()
+person_data = ("Asif IQbal", "Male", 32, "Confiz", "Simplicant", "Martketing", 741, "Confiz")
+print(person_data.index("Confiz", 2))
