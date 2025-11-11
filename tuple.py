@@ -128,3 +128,17 @@ print(joined_tuple)
 name = ("Asif", "Asad", "Ali") 
 result = name * 2
 print(result)
+
+#Using sum() Function
+#If you have a list of tuples, you can join them all using sum() — but you must start with an empty tuple ().
+tuple = [(10, 20), (30, 40), (50, 60)]
+result = sum(tuple, ())
+print(result)
+
+#Using a Loop
+#You can also join tuples in a loop:
+tuple = [(10, 20), (30, 40), (50, 60)]
+result = ()
+for t in tuple:
+    result += t
+    print(result)
