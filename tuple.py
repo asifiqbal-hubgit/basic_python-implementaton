@@ -115,3 +115,11 @@ data2 = ("Confiz", "Simplicant", "Martketing", 741)
 
 joined_data = data1 + data2
 print(joined_data)
+
+#Join Multiply Tuples
+tuple1 = (10, 20, 30)
+tuple2 = (40, 50, 60)
+tuple3 = (70, 80, 90)
+
+joined_tuple = tuple1 + tuple2 + tuple3
+print(joined_tuple)
