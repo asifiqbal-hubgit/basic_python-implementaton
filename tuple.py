@@ -123,3 +123,8 @@ tuple3 = (70, 80, 90)
 
 joined_tuple = tuple1 + tuple2 + tuple3
 print(joined_tuple)
+
+#Multiply Tuples using asterisk *
+name = ("Asif", "Asad", "Ali") 
+result = name * 2
+print(result)
