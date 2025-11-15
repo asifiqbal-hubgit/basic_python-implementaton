@@ -1,10 +1,5 @@
-#A set is a collection of unique, unordered items.
-#It doesn’t allow duplicates.
-#The elements are unordered (so no indexing).
-#Sets are useful for removing duplicates or doing mathematical operations like union, intersection, etc.
-#Sets are written with curly brackets.
-my_set = {1, 2, 3, 4, 5}
-print(my_set)
+
+
 
 #Using set() constructor
 numbers = set([1, 2, 3, 4])
@@ -14,9 +9,10 @@ print(numbers)
 #No duplicates 
 my_set = {10, 20, 20, 30, 40, 50}
 print(my_set)
-#No indexing
-my_set = {10, 20, 20, 30, 40, 50}
-print(my_set[0])
+#No indexing: sets are unordered and not subscriptable.
+# To get an arbitrary element, convert to a list or use an iterator:
+first_elem = next(iter(my_set))
+print("An element from the set (order arbitrary):", first_elem)
 #Length of a Set
 my_set = {10, 20, 20, 30, 40, 50}
 print(len(my_set))
@@ -69,7 +65,10 @@ print(set_person)
 #The del keyword will delete the set completely:
 set_person = {"Asif Iqbal", "Age", "Gender", "Working","Contect", "Address", "Email"}
 del set_person
-print(set_person)
+try:
+    print(set_person)
+except NameError:
+    print("set_person has been deleted; variable no longer exists")
 #Loop Through a Set
 number = {10, 20, 30, 40, 50}
 for item in number:
